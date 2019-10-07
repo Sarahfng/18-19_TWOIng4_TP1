@@ -1,0 +1,72 @@
+/*-------------------------NAVBAR-------------------------*/
+
+nav{
+	position : fixed;
+}
+
+/*-------------------------ABOUT-------------------------*/
+
+.about{
+	margin: 3%;
+	margin-left : 15%;
+	margin-right: 15%;
+	margin-top: 6%; 
+	padding : 2%;
+	/*border-width:1px;
+ 	border-style:dashed; /*dotted
+ 	border-color:grey;*/
+ 	overflow: auto;
+
+}
+
+.about h2{
+	text-align: center;
+	background-color: white;
+	color : #80bfff;
+	font-family: OCR A Std, monospace;
+}
+
+.about img{
+	position: absolute;
+	width : 15%;
+	height: auto;
+	border-radius: 50%;
+
+}
+
+.about h1{
+	
+	text-align: center;
+	background-color: white;
+	color : #80bfff;
+	font-family: OCR A Std, monospace;
+	margin-bottom: 5%;
+
+}
+
+.about p{
+	/*background-color: #80bfff;*/
+	color : black;
+	font-family: OCR A Std, monospace;
+	margin-left: 30%;
+	/*float: absolute;*/
+	text-align: justify;
+	
+}
+
+.about hr{
+	position : absolute;
+}
+
+/*-------------------------EXPERIENCE-------------------------*/
+
+.experience{
+	
+}
+
+/*-------------------------FOOTER-------------------------*/
+
+
+footer{
+	background-color : darkgrey;
+}
