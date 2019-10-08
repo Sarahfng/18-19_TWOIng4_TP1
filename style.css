@@ -3,6 +3,31 @@
 p{
 	font-size: 14px;
 	text-align: justify;
+	font-family: OCR A Std, monospace;
+}
+
+h1{
+	font-family: OCR A Std, monospace;
+}
+
+h2{
+	font-family: OCR A Std, monospace;
+}
+
+h3{
+	font-family: OCR A Std, monospace;
+}
+
+h4{
+	font-family: OCR A Std, monospace;
+}
+
+h5{
+	font-family: OCR A Std, monospace;
+}
+
+li{
+	font-family: OCR A Std, monospace;
 }
 
 section{
@@ -65,7 +90,8 @@ nav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 10px 13px;
+  padding: 12px 13px;
+  text-decoration: none;
 }
 
 nav li a:hover {
@@ -77,7 +103,6 @@ nav li a:hover {
 .about{
 	margin-left : 10%;
 	margin-right: 10%;
-	margin-top: 3%;
  	overflow: auto;
 
 }
@@ -125,22 +150,23 @@ nav li a:hover {
 /*-------------------------EXPERIENCE-------------------------*/
 .experience{
 	margin: 5%;
+	margin-top: 3%;
 	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
-.experience h2{
+.experience h1{
 	text-align: center;
 	color : #80bfff;
 	font-family: OCR A Std, monospace;
 	margin-bottom: 5%;
 }
 
-.timeline li{
+.experience .timeline li{
 	margin-left: 2%;
 	margin-bottom: 2%;
 }
 
-.timeline li:before{
+.experience .timeline li:before{
 	 content:'';
 	 background: #fff;
 	 position: absolute;
@@ -152,12 +178,12 @@ nav li a:hover {
 	 z-index: 1;
 }
 
-.timeline{
+.experience .timeline{
 	list-style-type: none;
 	position:relative;
 }
 
-.timeline:before{
+.experience .timeline:before{
 	 content:'';
 	 background: #555;
 	 position: absolute;
@@ -171,19 +197,38 @@ nav li a:hover {
 .formation{
 	margin-left: 5%;
 	margin-right: 5%;
+	margin-top: 3%;
+	margin-bottom: 5%;
 	/*background-color: #80bfff;*/
 }
 
-.formation h2{
+.formation h1{
 	text-align: center;
 	color : #80bfff;
 	font-family: OCR A Std, monospace;
 	margin-bottom: 5%;
 }
 
+.formation img{
+	height: 660px;
+	float: left;
+	margin-right: 5%;
+}
+
+.formation .timeline{
+	list-style-type: none;
+	position:relative;
+}
+
 /*-------------------------BENEVOLAT-------------------------*/
 
-.projet h2{
+.projet{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 3%;
+}
+
+.projet h1{
 	text-align: center;
 	background-color: white;
 	color : #80bfff;
@@ -193,11 +238,20 @@ nav li a:hover {
 /* Float four columns side by side */
 .projet .column {
   float: left;
-  width: 30%;
-  height: 30%;
+  width: 35%;
+  height: 35%;
   padding: 0 15px;
-  margin-left: 15%;
+  margin-left: 11%;
+  margin-right: 2%;
 }
+
+/*.projet .column:hover {
+  float: left;
+  width: 40%;
+  height: 40%;
+  padding: 0 15px;
+  margin-left: 14%;
+}*/
 
 /* Style the counter cards */
 .projet .card {
@@ -205,11 +259,17 @@ nav li a:hover {
   padding: 1%;
 }
 
+
+
 .projet img{
-	width: 175px;
-	height: 175px;
+	width: 180px;
+	height: 180px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.projet h5{
+	text-align: center;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -227,7 +287,13 @@ nav li a:hover {
 
 /*-------------------------COMPETENCES-------------------------*/
 
-.competence h2{
+.competence{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 3%;
+}
+
+.competence h1{
 	text-align: center;
 	background-color: white;
 	color : #80bfff;
@@ -270,3 +336,17 @@ footer .row:after {
 
 
 
+
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating img {
+    -webkit-animation: rotating 10s linear infinite;
+}
