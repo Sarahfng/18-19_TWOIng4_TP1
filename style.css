@@ -166,7 +166,7 @@ nav li a:hover {
 	margin-bottom: 2%;
 }
 
-.experience .timeline li:before{
+/*.experience .timeline li:before{
 	 content:'';
 	 background: #fff;
 	 position: absolute;
@@ -176,7 +176,7 @@ nav li a:hover {
 	 width: 10px;
 	 height: 10px;
 	 z-index: 1;
-}
+}*/
 
 .experience .timeline{
 	list-style-type: none;
@@ -191,6 +191,14 @@ nav li a:hover {
 	 width: 2px;
 	 height: 100%;
 	 z-index: 1;
+}
+
+.experience h4{
+	padding-left: 2%;
+}
+
+.experience p{
+	margin-left: 2%;
 }
 
 /*-------------------------FORMATION-------------------------*/
@@ -349,4 +357,8 @@ footer .row:after {
 
 .rotating img {
     -webkit-animation: rotating 10s linear infinite;
+    float: left;
+    width: 5%;
+    margin-left:2%;
+    margin-right: 2%;
 }
