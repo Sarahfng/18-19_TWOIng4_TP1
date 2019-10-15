@@ -44,17 +44,17 @@ function myFunction() {
 
 		<main>
 			<header class="accueil">
-				<div class="fond">
-				</div>
+				<section class="fond">
+				</section>
 				
-				<div class="infos">
+				<section class="infos">
 				<img src="img1.JPEG" id="photo" alt="">
 					<h1>SARAH<br>FONG</h1>
 					<p>Etudiante en 2e année du cycle ingénieur à l'ECE Paris</p><br>
 					<!-- <p>sarahfong@outlook.fr</p>
 					<p>06 25 11 34 91</p>
 					<p>linkedin</p> -->
-				</div>
+				</section>
 
 
 			</header>
@@ -75,7 +75,7 @@ function myFunction() {
 			<h1>Expériences</h1>
 			<ul class="timeline">
 				<li>
-					<div id="myf" class="rotating">
+					<section id="myf" class="rotating">
 						<img src="logomyf.png" alt="">
 					
 					<h4>Secrétaire Générale - Move Your Feet</h4>
@@ -86,11 +86,11 @@ function myFunction() {
 						- veille à la bonne communication entre les pôles<br>
 						- organise le planning global de l'association afin que nos objectifs soient atteints dans les meilleures conditions<br>
 					</p>
-					</div>
+					</section>
 					<br>
 				</li>
 				<li>
-					<div id="myfsb" class="rotating">
+					<section id="myfsb" class="rotating">
 						<img src="logomyfsb.png" alt="">
 				
 					<h4>Vice-Présidente Move Your Feet School Battle - Move your Feet</h4>
@@ -98,11 +98,11 @@ function myFunction() {
 						La Move Your Feet School Battle est un concours de danse chorégraphique inter-universitaires qui est suivie d’une soirée étudiante.<br>
 						A la tête d'une équipe de 3 personnes, j'ai pu m'occuper de son entière organisation (contacter les écoles et universités, les jurys et les prestataires, trouver le thème, la salle...).
 					</p>
-					</div>
+					</section>
 					<br>
 				</li>
 				<li>
-					<div id="leemo" class="rotating">
+					<section id="leemo" class="rotating">
 						<img src="logoleemo.png" alt="">
 					
 					<h4>Assistante de Direction des Systèmes d'Information - Leemo</h4>
@@ -111,18 +111,18 @@ function myFunction() {
 						J'ai alors utilisée le javascript, svg, php ainsi qu'une base de données avec phpMyAdmin.<br><br>
 						En contact constant avec le directeur des systèmes d'information et le directeur de projets, ce stage m'a beaucoup appris sur la gestion de projets. En commençant par l'aménagement d'une feuille de route jusqu'à la livraison du produit, j'ai pris connaissance de la méthode agile appliquée dans l'entreprise ainsi que de tous les conseils qui m'ont été donnés pour mener à bien un projet.
 					</p>
-					</div>
+					</section>
 					<br>
 				</li>
 				<li>
-					<div id="kenzo" class="rotating">
+					<section id="kenzo" class="rotating">
 						<img src="logokenzo.png" alt="">
 					
 					<h4>Conseillère de vente - Kenzo Paris</h4>
 					<p>
 						Conseillère de vente chez Kenzo Paris situé aux Champs Élysées, vente en anglais dû à la clientèle internationale
 					</p>
-					</div>
+					</section>
 				</li>
 			</ul>
 		</section>
@@ -169,8 +169,7 @@ function myFunction() {
 		<section class="projet" id="projet">
 			<br>
 			<h1>Expériences de bénévolat</h1>
-			<br><br>
-			    <div class="card">
+			    <article class="card">
 			      <img src="upa.png" alt="">
 			    <h4>Unis Pour Agir</h4>
 			    <p>
@@ -179,36 +178,99 @@ function myFunction() {
 			    	j'ai eu l'occasion de participer à l'organisation et 
 			    	aux distributions de maraudes dans les rues de Paris.<br>De plus, j'ai pu aider lors de la préparation d'un diner de charité organisé à l'école pour les étudiants dans le but de récolter des fonds et les reverser à une autre association humanitaire.
 			    </p>
-			  </div>
+			  </article>
 
-			    <div class="card">
+			    <article class="card">
 			      <img src="foodfest.png" alt="">
 			    <h4>La Petite Manille</h4>
 			    <p>
 			    	Le Petite Manille est une nouvelle association qui a mis en place le <b>1er Food Festival Philippin</b> à Paris.<br>Cet évènement a permis de partager la nourriture et la culture philippine, le tout pour soutenir l'association Caméléon qui aide les jeunes filles victimes de violences sexuelles aux Philippines.<br>Bénévole lors de cet évènement, j'ai pu aider lors de l'organisaiton de celui ci, la création de décoration et en tant que staff.
 			    </p>
-			  </div>
+			  </article>
 			<br>
 		</section>
 
 		<hr width="70%" size="0.5" color="lightgrey">
 
 		<section class="competence" id="competence">
-			<br>
 			<h1>Compétences</h1>
-			<label for="file">File progress:</label>
-			<progress id="file" max="100" value="70" width="500"> 70% </progress>
-			<br>
-			<label for="file">File progress:</label>
-			<progress id="file" max="100" value="70" width="100"> 70% </progress>
-			<br>
-			<label for="file">File progress:</label>
-			<progress id="file" max="100" value="70" width="100"> 70% </progress>
-			<br>
-			<label for="file">File progress:</label>
-			<progress id="file" max="100" value="70" width="100"> 70% </progress>
-			<br>
+
+			<article class="card">
+			    <h4>Programmation</h4>
+			    <label for="file">C/C++:</label>
+				<progress id="file" max="100" value="70" width="500"> 70% </progress>
+				<br>
+				<label for="file">Java:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<label for="file">JavaScript:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<label for="file">HTML:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<label for="file">CSS:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<label for="file">PhpMyAdmin:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+			</article>
+
+			<article class="card">
+			    <h4>Logiciels</h4>
+			    <label for="file">Word:</label>
+				<progress id="file" max="100" value="70" width="500"> 70% </progress>
+				<br>
+				<label for="file">Excel:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<label for="file">Power Point:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<label for="file">ISIS Schematics:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<label for="file">MatLab:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<label for="file">Cisco Tracer:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+			</article>
+
+
+			<article class="card">
+			    <h4>Langues</h4>
+			    <label for="file">Français:</label>
+				<progress id="file" max="100" value="70" width="500"> 70% </progress>
+				<br>
+				<label for="file">Anglais:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<label for="file">Chinois:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<label for="file">Tagalog:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+			 </article>
+
+			<article class="card">
+				<h4>Autre</h4>
+				<label for="file">Management:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<label for="file">Méthode Agile:</label>
+				<progress id="file" max="100" value="70" width="100"> 70% </progress>
+				<br>
+				<video width="280" height="200" controls>
+				  <source src="video.mp4" type="video/mp4">
+				</video>
+			</article>
 		</section>
+
+
 	</main>
 
 

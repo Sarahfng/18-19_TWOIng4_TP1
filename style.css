@@ -377,13 +377,20 @@ nav li a:hover {
 .competence h1{
 	text-align: center;
 	color : #80bfff;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-top: 2%;
 }
 
 label {
     padding-right: 10px;
     font-size: 1rem;
+}
+
+.competence .card {
+  margin: 2%;
+  float: left;
+  width: 36%;
+  padding: 0 10px;
+  margin-left: 9%;
 }
 
 
