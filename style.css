@@ -1,84 +1,131 @@
 /*-------------------------GENERAL-------------------------*/
 
 p{
-	font-size: 14px;
+	font-size: 16px;
 	text-align: justify;
-	font-family: OCR A Std, monospace;
+	font-family: 'Muli', sans-serif;
 }
 
 h1{
-	font-family: OCR A Std, monospace;
+	font-family: 'Alegreya SC', serif;
+	font-size: 32px;
 }
 
 h2{
-	font-family: OCR A Std, monospace;
+	font-family: 'Alegreya SC', serif;
 }
 
 h3{
-	font-family: OCR A Std, monospace;
+	font-family: 'Alegreya SC', serif;
 }
 
 h4{
-	font-family: OCR A Std, monospace;
+	font-family: 'Alegreya SC', serif;
+	font-size: 24px;
+	/*color: #119DCF;*/
 }
 
 h5{
-	font-family: OCR A Std, monospace;
+	font-family: 'Alegreya SC', serif;
 }
 
 li{
-	font-family: OCR A Std, monospace;
+	font-family: 'Alegreya SC', serif;
 }
 
 section{
-	padding-left: 15%;
-	padding-right: 15%;
+	width: 100%;
+
 }
 
 body{
 	margin: 0;
+	background-color: #F8F8F8;
+	color: black;
+	font-family: 'Muli', sans-serif;
 }
+
 
 /*-------------------------ACCUEIL-------------------------*/
 
 .accueil{
-	background-image:url(fond.jpg);
+	background-image:url(fond11.jpg);
 	background-repeat:no-repeat;
+	/*background-color:#383838;*/
+	/*opacity: 0.7;*/ 
 	width: 100%;
-	height: 460px;
+	height: 670px;
+	margin-top: 0;
+	padding-top: 4%;
 	
 	/*width: auto;
 	height: 100%;*/
 }
 
+.fond {
+	background-color: black;
+	width: 37%;
+	height: 45%;
+	opacity: 0.7;
+	margin-left: 10%;
+	margin-top: 6%;
+	position: absolute;
+	
+	
+}
+
+.infos{
+	z-index: 1;
+	position: absolute;
+	width: 37%;
+	height: 60%;
+	margin-left: 9%;
+	margin-top: 2%;
+	overflow: hidden;
+	padding: 3%;
+	
+}
+
 #photo{
-	width:13%;
+	width:45%;
 	height: auto;
 	border-radius: 50%;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 3%;
+	display: block;/*
+    padding-top: 8%;*/
+    float: left;
+    opacity: 1;
+    z-index: 1;
+    margin-top: 8.2%;
 }
 
 .accueil h1{
 	color : white;
-	text-align: center;
+	/*text-align: center;*/
+	margin-left: 53%;
+	font-size: 70px;
+	opacity: 1;
+	z-index: 1;
 }
 
 .accueil p{
 	color : white;
-	text-align: center;
-	font-size:15px;
+	/*text-align: center;*/
+	margin-left: 53%;
+	font-size: 14px;
+	opacity: 1;
+	z-index: 1;
+	
 }
 
 
 /*-------------------------NAVBAR-------------------------*/
 nav ul {
   overflow: hidden;
-  background-color: #333;
+  background-color: #383838;
   width: 100%;
-  margin-top: 0;
+  margin: 0;
+  position: fixed;
+  z-index: 2;
 }
 
 nav li{
@@ -95,49 +142,28 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #111;
+  background-color: #e03c00;
+  opacity: 0.33;
+  color: white;
 }
 
 /*-------------------------ABOUT-------------------------*/
 
 .about{
-	margin-left : 10%;
-	margin-right: 10%;
- 	overflow: auto;
-
-}
-
-.about h2{
-	text-align: center;
-	background-color: white;
-	color : #80bfff;
-	font-family: OCR A Std, monospace;
-	margin-bottom: 3%;
-	margin-top: 2%;
-}
-
-.about img{
-	position: absolute;
-	width : 10%;
-	height: auto;
-	border-radius: 50%;
-
+ 	padding-left: 25%;
+ 	padding-right: 25%;
 }
 
 .about h1{
-	
 	text-align: center;
-	background-color: white;
 	color : #80bfff;
-	font-family: OCR A Std, monospace;
+	margin-top: 5%;
 	margin-bottom: 5%;
 
 }
 
 .about p{
 	/*background-color: #80bfff;*/
-	color : black;
-	font-family: OCR A Std, monospace;
 	/*float: absolute;*/
 	text-align: center;
 	
@@ -149,16 +175,16 @@ nav li a:hover {
 
 /*-------------------------EXPERIENCE-------------------------*/
 .experience{
-	margin: 5%;
-	margin-top: 3%;
 	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+	padding-left: 18%;
+ 	padding-right: 20%;
 }
 
 .experience h1{
 	text-align: center;
 	color : #80bfff;
-	font-family: OCR A Std, monospace;
 	margin-bottom: 5%;
+	margin-top: 5%;
 }
 
 .experience .timeline li{
@@ -181,6 +207,7 @@ nav li a:hover {
 .experience .timeline{
 	list-style-type: none;
 	position:relative;
+
 }
 
 .experience .timeline:before{
@@ -201,24 +228,58 @@ nav li a:hover {
 	margin-left: 2%;
 }
 
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating img {
+    -webkit-animation: rotating 10s linear infinite;
+    float: left;
+    width: 7%;
+    margin-left:2%;
+    margin-right: 2%;
+    border-radius: 50%;
+}
+
+#myf h4{
+	color: #AF0A0A;
+}
+
+#myfsb h4{
+	color: #7200A7;
+}
+
+#leemo h4{
+	color: #f17565;
+}
+
+#kenzo h4{
+	color: #F1C101;
+}
+
+
 /*-------------------------FORMATION-------------------------*/
 .formation{
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 3%;
-	margin-bottom: 5%;
 	/*background-color: #80bfff;*/
+	padding-left: 20%;
+ 	padding-right: 20%;
+ 	margin-bottom: 4%;
 }
 
 .formation h1{
 	text-align: center;
 	color : #80bfff;
-	font-family: OCR A Std, monospace;
+	margin-top: 7%;
 	margin-bottom: 5%;
 }
 
 .formation img{
-	height: 660px;
+	height: 710px;
 	float: left;
 	margin-right: 5%;
 }
@@ -228,30 +289,37 @@ nav li a:hover {
 	position:relative;
 }
 
+
+.formation-animation
+{
+	animation-duration: 7s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:-100%;
+  }
+  
+  to {
+    margin-left:0%;
+  }
+}
+
 /*-------------------------BENEVOLAT-------------------------*/
 
 .projet{
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 3%;
+	padding-left: 20%;
+ 	padding-right: 20%;
 }
 
 .projet h1{
 	text-align: center;
-	background-color: white;
 	color : #80bfff;
-	font-family: OCR A Std, monospace;
+	margin-top: 2%;
+	margin-bottom: 3%;
 }
 
-/* Float four columns side by side */
-.projet .column {
-  float: left;
-  width: 35%;
-  height: 35%;
-  padding: 0 15px;
-  margin-left: 11%;
-  margin-right: 2%;
-}
 
 /*.projet .column:hover {
   float: left;
@@ -264,7 +332,12 @@ nav li a:hover {
 /* Style the counter cards */
 .projet .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 1%;
+  margin: 3%;
+  float: left;
+  width: 35%;
+  padding: 0 15px;
+  margin-left: 9%;
+  margin-right: 2%;
 }
 
 
@@ -272,8 +345,9 @@ nav li a:hover {
 .projet img{
 	width: 180px;
 	height: 180px;
-	margin-right: auto;
-	margin-left: auto;
+	margin-left: 19%;
+	margin-top: 5%;
+
 }
 
 .projet h5{
@@ -296,16 +370,15 @@ nav li a:hover {
 /*-------------------------COMPETENCES-------------------------*/
 
 .competence{
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 3%;
+	padding-left: 20%;
+ 	padding-right: 20%;
 }
 
 .competence h1{
 	text-align: center;
-	background-color: white;
 	color : #80bfff;
-	font-family: OCR A Std, monospace;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 label {
@@ -317,48 +390,57 @@ label {
 /*-------------------------FOOTER-------------------------*/
 
 
-footer{
+/*footer{
 	background-color : darkgrey;
-}
+	padding-bottom: 3%;
+}*/
 
 
 * {
   box-sizing: border-box;
 }
 
+footer {
+	margin-top: 10%;
+}
 /* Create three equal columns that floats next to each other */
 footer .column {
   float: left;
-  width: 33.33%;
-  padding: 10px;
+  width: 30%;
+  padding: 5%;
+
    /* Should be removed. Only for demonstration */
 }
 
+#box{
+	width: 100%;
+	overflow: hidden;
+	font-size: 16px;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid #4caf50;
+}
+
+input{
+	border:none;
+	outline: none;
+	background: none;
+
+}
+
+#button{
+	margin-top: 5%;
+	width: 100%;
+	background: none;
+	border: 2px solid #4caf50;
+
+}
+
 /* Clear floats after the columns */
-footer .row:after {
+/*footer .row:after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
 
-
-
-
-
-@-webkit-keyframes rotating {
-    from{
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-.rotating img {
-    -webkit-animation: rotating 10s linear infinite;
-    float: left;
-    width: 5%;
-    margin-left:2%;
-    margin-right: 2%;
-}

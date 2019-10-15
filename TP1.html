@@ -4,29 +4,62 @@
 		<meta charset=utf-8>
 		<title>CV Sarah Fong</title>
 		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Aclonica&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
+<!-- <script type="text/javascript">
+	
+window.onscroll = function() {myFunction()};
+
+var formation = document.getElementById("formation");
+var formationimg = document.getElementById("formation-img");
+var topformation = formation.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > topformation) {
+    formationimg.classList.add(" formation-animation");
+  }
+}
+</script> -->
+
 	</head>
 
 
 	<body>
-		<header class="accueil">
-			<img src="img1.JPEG" id="photo" alt="">
-			<h1>SARAH FONG</h1>
-			<p>Etudiante en 1ere année du cycle ingénieur à l'ECE Paris</p>
+		<header>
+			<nav>
+				<ul>
+				  <li><a href="TP1.html">Home</a></li>
+				  <li><a href="apropos.html">A propos</a></li>
+				  <li><a href="experience.html">Expériences</a></li>
+				  <li><a href="#formation">Formation</a></li>
+				  <li><a href="#projet">Bénévolats</a></li>
+				  <li><a href="#competence">Compétences</a></li>
+				  <li style="float:right"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
 		</header>
 
-		<nav>
-			<ul>
-			  <li><a href="#">Home</a></li>
-			  <li><a href="#about">A propos</a></li>
-			  <li><a href="#experience">Expériences</a></li>
-			  <li><a href="#formation">Formation</a></li>
-			  <li><a href="#projet">Bénévolats</a></li>
-			  <li><a href="#competence">Compétences</a></li>
-			  <li style="float:right"><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-
 		<main>
+			<header class="accueil">
+				<div class="fond">
+				</div>
+				
+				<div class="infos">
+				<img src="img1.JPEG" id="photo" alt="">
+					<h1>SARAH<br>FONG</h1>
+					<p>Etudiante en 2e année du cycle ingénieur à l'ECE Paris</p><br>
+					<!-- <p>sarahfong@outlook.fr</p>
+					<p>06 25 11 34 91</p>
+					<p>linkedin</p> -->
+				</div>
+
+
+			</header>
+
+		
 		<section class="about" id="about">
 			<h1>A Propos</h1>
 			<p>Actuellement en école d'ingénieurs, j'ai décidé de poursuivre mon cursus dans la majeure Objets Connectés, Réseaux et Services (OCRES).
@@ -42,9 +75,9 @@
 			<h1>Expériences</h1>
 			<ul class="timeline">
 				<li>
-					<div id="test" class="rotating">
+					<div id="myf" class="rotating">
 						<img src="logomyf.png" alt="">
-					</div>
+					
 					<h4>Secrétaire Générale - Move Your Feet</h4>
 					<p>
 						Move Your Feet est l'association de danse du Campus Eiffel. Notre bureau se compose de 14 personnes.
@@ -53,39 +86,43 @@
 						- veille à la bonne communication entre les pôles<br>
 						- organise le planning global de l'association afin que nos objectifs soient atteints dans les meilleures conditions<br>
 					</p>
+					</div>
 					<br>
 				</li>
 				<li>
-					<div id="test" class="rotating">
+					<div id="myfsb" class="rotating">
 						<img src="logomyfsb.png" alt="">
-					</div>
+				
 					<h4>Vice-Présidente Move Your Feet School Battle - Move your Feet</h4>
 					<p>
 						La Move Your Feet School Battle est un concours de danse chorégraphique inter-universitaires qui est suivie d’une soirée étudiante.<br>
 						A la tête d'une équipe de 3 personnes, j'ai pu m'occuper de son entière organisation (contacter les écoles et universités, les jurys et les prestataires, trouver le thème, la salle...).
 					</p>
+					</div>
 					<br>
 				</li>
 				<li>
-					<div id="test" class="rotating">
+					<div id="leemo" class="rotating">
 						<img src="logoleemo.png" alt="">
-					</div>
+					
 					<h4>Assistante de Direction des Systèmes d'Information - Leemo</h4>
 					<p>
 						Accueilli dans le pôle des systèmes information, ma mission principale a été de développer une "roue de la fortune". Il s'agit d'un jeu de hasard permettant aux participants de gagner des lots.<br>
 						J'ai alors utilisée le javascript, svg, php ainsi qu'une base de données avec phpMyAdmin.<br><br>
 						En contact constant avec le directeur des systèmes d'information et le directeur de projets, ce stage m'a beaucoup appris sur la gestion de projets. En commençant par l'aménagement d'une feuille de route jusqu'à la livraison du produit, j'ai pris connaissance de la méthode agile appliquée dans l'entreprise ainsi que de tous les conseils qui m'ont été donnés pour mener à bien un projet.
 					</p>
+					</div>
 					<br>
 				</li>
 				<li>
-					<div id="test" class="rotating">
+					<div id="kenzo" class="rotating">
 						<img src="logokenzo.png" alt="">
-					</div>
+					
 					<h4>Conseillère de vente - Kenzo Paris</h4>
 					<p>
 						Conseillère de vente chez Kenzo Paris situé aux Champs Élysées, vente en anglais dû à la clientèle internationale
 					</p>
+					</div>
 				</li>
 			</ul>
 		</section>
@@ -93,7 +130,7 @@
 		<section class="formation" id="formation">
 			<h1>Formation</h1>
 
-			<img src="education1.png" alt="">
+			<img src="education2.png" class="formation-animation"alt="">
 			<ul class="timeline">
 				<li>
 					
@@ -133,21 +170,24 @@
 			<br>
 			<h1>Expériences de bénévolat</h1>
 			<br><br>
-			<section class="row">
-			  <div class="column">
 			    <div class="card">
 			      <img src="upa.png" alt="">
-			    </div>
-			    <h5>Unis Pour Agir</h5>
+			    <h4>Unis Pour Agir</h4>
+			    <p>
+			    	Unis Pour Agir (UPA) est l'association humanitaire de l'ECE Paris.
+			    	Etant membre durant l'année scolaire 2017-2018,
+			    	j'ai eu l'occasion de participer à l'organisation et 
+			    	aux distributions de maraudes dans les rues de Paris.<br>De plus, j'ai pu aider lors de la préparation d'un diner de charité organisé à l'école pour les étudiants dans le but de récolter des fonds et les reverser à une autre association humanitaire.
+			    </p>
 			  </div>
 
-			  <div class="column">
 			    <div class="card">
 			      <img src="foodfest.png" alt="">
-			    </div>
-			    <h5>La Petite Manille</h5>
+			    <h4>La Petite Manille</h4>
+			    <p>
+			    	Le Petite Manille est une nouvelle association qui a mis en place le <b>1er Food Festival Philippin</b> à Paris.<br>Cet évènement a permis de partager la nourriture et la culture philippine, le tout pour soutenir l'association Caméléon qui aide les jeunes filles victimes de violences sexuelles aux Philippines.<br>Bénévole lors de cet évènement, j'ai pu aider lors de l'organisaiton de celui ci, la création de décoration et en tant que staff.
+			    </p>
 			  </div>
-			</section>
 			<br>
 		</section>
 
@@ -157,7 +197,16 @@
 			<br>
 			<h1>Compétences</h1>
 			<label for="file">File progress:</label>
-			<progress id="file" max="100" value="70"> 70% </progress>
+			<progress id="file" max="100" value="70" width="500"> 70% </progress>
+			<br>
+			<label for="file">File progress:</label>
+			<progress id="file" max="100" value="70" width="100"> 70% </progress>
+			<br>
+			<label for="file">File progress:</label>
+			<progress id="file" max="100" value="70" width="100"> 70% </progress>
+			<br>
+			<label for="file">File progress:</label>
+			<progress id="file" max="100" value="70" width="100"> 70% </progress>
 			<br>
 		</section>
 	</main>
@@ -169,17 +218,9 @@
 
 	<!-- Footer -->
     <footer>
-    	<div class="row">
-		  <div class="column" style="background-color:#aaa;">
-		    <h5 class="text-uppercase">Contact</h5>
-            <p><b>Sarah Fong</b><br>
-            2ème année de Cycle Ingénieur - ECE Paris<br>
-			Spécialité Objets Connectés, Réseaux et Services<br>
-			37 quai de Grenelle, 75015 PARIS<br>
-			06.25.11.34.91</p>
-		  </div>
-		  <div class="column" style="background-color:#bbb;">
-		    <h5 class="text-uppercase">Contact</h5>
+    	
+		  <div class="column" style="background-color:#aaa; margin-left: 23%;">
+		    <h3 class="text-uppercase">Contact</h3>
             <p><b>Sarah Fong</b><br>
             2ème année de Cycle Ingénieur - ECE Paris<br>
 			Spécialité Objets Connectés, Réseaux et Services<br>
@@ -187,14 +228,14 @@
 			06.25.11.34.91</p>
 		  </div>
 		  <div class="column" style="background-color:#ccc;">
-		    <h5 class="text-uppercase">Contact</h5>
-            <p><b>Sarah Fong</b><br>
-            2ème année de Cycle Ingénieur - ECE Paris<br>
-			Spécialité Objets Connectés, Réseaux et Services<br>
-			37 quai de Grenelle, 75015 PARIS<br>
-			06.25.11.34.91</p>
+            <form>
+			  <input id="box" type="text" name="firstname" value="Nom"><br>
+			  <input id="box" type="text" name="email" value="E-mail*"><br>
+			  <input id="box" type="text" name="text" value="Votre message"></input><br>
+			  <input id="button" type="submit" value="Envoyer">
+			</form>
 		  </div>
-		</div>
+		
   </footer>
 
 
