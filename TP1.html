@@ -193,11 +193,14 @@ function myFunction() {
 		<hr width="70%" size="0.5" color="lightgrey">
 
 		<section class="competence" id="competence">
-			<h1>Compétences</h1>
+			
 
 			<article class="card">
-			    <h4>Programmation</h4>
-			    <table>
+				<h1>Compétences</h1>
+				<table>
+				    <tr>
+				    	<td><h4>Programmation</h4></td>
+					</tr>
 			    	<tr>
 					    <td><label for="file">C/C++</label></td>
 						<td><progress id="file" max="100" value="70" width="500"> 70% </progress></td>
@@ -222,12 +225,10 @@ function myFunction() {
 					    <td><label for="file">SQL</label></td>
 						<td><progress id="file" max="100" value="70" width="500"> 70% </progress></td>
 					</tr>
-				</table>
-			</article>
 
-			<article class="card">
-			    <h4>Logiciels</h4>
-			    <table>
+			     	<tr>
+				    	<td><h4>Logiciel</h4></td>
+					</tr>
 			    	<tr>
 					    <td><label for="file">Pack office</label></td>
 						<td><progress id="file" max="100" value="70" width="500"> 70% </progress></td>
@@ -252,13 +253,10 @@ function myFunction() {
 					    <td><label for="file">Matlab</label></td>
 						<td><progress id="file" max="100" value="70" width="500"> 70% </progress></td>
 					</tr>
-				</table>
-			</article>
 
-
-			<article class="card">
-			    <h4>Langues</h4>
-			    <table>
+				 	<tr>
+				    	<td><h4>Langues</h4></td>
+					</tr>
 			    	<tr>
 					    <td><label for="file">Français</label></td>
 						<td><progress id="file" max="100" value="70" width="500"> 70% </progress></td>
@@ -279,54 +277,48 @@ function myFunction() {
 					    <td><label for="file">Espagnol</label></td>
 						<td><progress id="file" max="100" value="70" width="500"> 70% </progress></td>
 					</tr>
-				</table>
-			 </article>
 
-			<article class="card">
-				<h4>Autre</h4>
-				<table>
-				<tr>
-				    <td><label for="file">Management d'équipe</label></td>
-					<td><progress id="file" max="100" value="70" width="500"> 70% </progress></td>
-				</tr>
-				<!-- <tr>
-				    <td><label for="file">Méthode Agile</label></td>
-					<td><progress id="file" max="100" value="70" width="500"> 70% </progress></td>
-				</tr> -->
-			</table>
-			<video width="350" height="270" controls="controls" autoplay="true" loop="true">
+				 	<tr>
+				    	<td><h4>Autre</h4></td>
+					</tr>
+					<tr>
+					    <td><label for="file">Management d'équipe</label></td>
+						<td><progress id="file" max="100" value="70" width="500"> 70% </progress></td>
+					</tr>
+					<tr>
+					    <td><label for="file">Esprit d'équipe</label></td>
+						<td><progress id="file" max="100" value="70" width="500"> 70% </progress></td>
+					</tr>
+				</table>
+				<video width="350" height="270" controls="controls" autoplay="true" loop="true">
 					<source src="video.mp4" type="video/mp4">
-			</video>
+				</video>
 			</article>
 		</section>
 
-
 	</main>
-
-
-		
 
 
 
 	<!-- Footer -->
     <footer>
-    	
-		  <div class="column" style="background-color:#aaa; margin-left: 23%;">
+
+		  <section class="column" style="background-color:#383838; margin-left: 10%">
 		    <h3 class="text-uppercase">Contact</h3>
             <p><b>Sarah Fong</b><br>
             2ème année de Cycle Ingénieur - ECE Paris<br>
 			Spécialité Objets Connectés, Réseaux et Services<br>
 			37 quai de Grenelle, 75015 PARIS<br>
 			06.25.11.34.91</p>
-		  </div>
-		  <div class="column" style="background-color:#ccc;">
+		  </section>
+		  <section class="column" style="background-color:#8D8D8D;">
             <form>
 			  <input id="box" type="text" name="firstname" value="Nom"><br>
 			  <input id="box" type="text" name="email" value="E-mail*"><br>
-			  <input id="box" type="text" name="text" value="Votre message"></input><br>
+			  <input id="box" type="textarea" name="text" value="Votre message"></input><br>
 			  <input id="button" type="submit" value="Envoyer">
 			</form>
-		  </div>
+		  </section>
 		
   </footer>
 
