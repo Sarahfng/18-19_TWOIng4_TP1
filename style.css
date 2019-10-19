@@ -349,7 +349,7 @@ progress{
   width: 500px;
   height: 1px;
   background-color: #eee;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25) inset;
+  
 }
 
 progress::-webkit-progress-value { background: #006EB3; }
@@ -388,6 +388,7 @@ footer .column {
   height: 300px;
   padding: 3%;
   color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #box{
@@ -396,11 +397,12 @@ footer .column {
 	font-size: 16px;
 	padding: 8px 0;
 	margin: 8px 0;
-	color: yellow;
+	color: #eee;
 	border-bottom: 1px solid white;
+
 }
 
-input{
+input, textarea{
 	border:none;
 	outline: none;
 	background: none;
@@ -415,8 +417,9 @@ input{
 
 }
 
-footer a{
-    color: white;
+footer a, .contact{
+    color: grey;
     text-decoration: none;
 }
+
 
