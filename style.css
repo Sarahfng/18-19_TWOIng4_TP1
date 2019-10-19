@@ -22,7 +22,6 @@ h3{
 h4{
 	font-family: 'Alegreya SC', serif;
 	font-size: 24px;
-	/*color: #119DCF;*/
 }
 
 h5{
@@ -360,19 +359,6 @@ nav li a:hover {
 	text-align: center;
 }
 
-/* Remove extra left and right margins, due to padding */
-/*.projet .row {margin: 0 -5px;}*/
-
-
-/* Responsive columns */
-/*@media screen and (max-width: 600px) {
-  .projet .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}*/
-
 /*-------------------------COMPETENCES-------------------------*/
 
 .competence{
@@ -384,7 +370,7 @@ nav li a:hover {
 	text-align: center;
 	color : #80bfff;
 	margin-top: 2%;
-	padding-left: 0%;
+	margin-right: 10%;
 }
 
 .competence td{
@@ -425,22 +411,21 @@ video{
 	margin-top: 2%;
 }
 
+.competence p{
+	text-align: center;
+	margin-right: 10%;
+	margin-top: 0;
+	color: #797979;
+}
 
 /*-------------------------FOOTER-------------------------*/
-
-
-/*footer{
-	background-color : darkgrey;
-	padding-bottom: 3%;
-}*/
-
 
 * {
   box-sizing: border-box;
 }
 
 footer {
-	margin-top: 70%;
+	margin-top: 77%;
 	background-image:url(fondform2.jpg);
 	padding-top: 13%; 
 	position : absolute;
@@ -449,8 +434,6 @@ footer {
 	padding-bottom: 5%;
 }
 
-
-/* Create three equal columns that floats next to each other */
 footer .column {
   float: left;
   width: 40%;
@@ -483,11 +466,8 @@ input{
 
 }
 
-/* Clear floats after the columns 
-/*footer .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
-
+footer a{
+    color: white;
+    text-decoration: none;
+}
 
